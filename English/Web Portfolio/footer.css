@@ -1,0 +1,20 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-dark);
+    padding: calc(32px + .5vw + .5vh) 0;
+}
+footer ul{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: calc(12px + .5vw + .5vh);
+}
+footer i{
+    font-size: calc(48px + .5vw + .5vh);
+    color: #fff;
+}
+footer i:hover{
+    color: var(--primary-color);
+}

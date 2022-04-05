@@ -1,0 +1,109 @@
+.text
+# red = 0x009f0000
+# green = 0x9f00
+main:
+	add $9, $0, $0
+	
+	lui $8,0x1001
+	
+	addi $8,$8,16
+	jal while1
+	
+	addi $8,$8,4096
+	jal while1
+	
+	addi $8,$8,4096
+	jal while1
+	
+	addi $8,$8,4096
+	jal while1
+	
+	addi $8,$8,4096
+	jal while1
+	
+	j fim
+	
+	
+	while1:
+		beq $9,10, endwhile1
+		
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+		
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,504
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x9f00
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x9f00
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,496
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x009f0000
+		sw $24, 0($8)
+	
+		addi $8,$8,500
+		add $24, $0, 0x9f00
+		sw $24, 0($8)
+	
+		addi $8,$8,4
+		add $24, $0, 0x9f00
+		sw $24, 0($8)
+		
+		addi $8,$8,-1400
+		addi $9,$9,1
+		j while1
+	endwhile1: 
+		add $9, $0, $0
+		jr $ra
+	
+	
+	
+	
+	
+	
+	lui $8,0x1001
+	addi $8,$8,28160
+	add $24, $0, 0x9f00
+	sw $24, 0($8)
+	
+	
+	
+	
+	
+	
+fim: 
+	addi $2, $0, 10
+	syscall

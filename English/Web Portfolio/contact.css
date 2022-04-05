@@ -1,0 +1,21 @@
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact main{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(32px + 1vw + 1vh) 0;
+    gap: calc(12px + .5vw + .5vh);
+}
+#contact main p{
+    text-align: center;
+}
+#contact main h4{
+    color: var(--primary-color);
+}

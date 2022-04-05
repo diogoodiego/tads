@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: var(--screen);
+    padding: 2rem 0;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+header a{
+    transition: all ease-in-out .4s;
+}
+header a:hover{
+    font-weight: 500;
+    background: var(--gradient-one);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.logo .brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    background: var(--gradient-one);
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 24px;
+}

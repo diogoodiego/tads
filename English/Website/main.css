@@ -1,0 +1,81 @@
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+main .circle{
+    width: 100vw;
+    height: 100vw;
+    border-radius: 100rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -50vw;
+    right: -50vw;
+    z-index: -3;
+}
+main .row{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+main .col{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+main h1{
+    color: var(--text-primary);
+    font-size: 4rem;
+}
+main span{
+    color: var(--primary-color);
+}
+
+main button{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rem;
+    border: none;
+    background-color: var(--text-white);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    box-shadow: 0 0 0 0 rgba(248, 248, 248, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(248, 248, 248, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 18px rgba(248, 248, 248, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(248, 248, 248, 0);
+	}
+}
+
+
+.headphone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-36%,-50%);
+    z-index: -1;
+    width: 50vw;
+}

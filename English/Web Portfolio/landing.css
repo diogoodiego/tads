@@ -1,0 +1,25 @@
+#landing{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing .grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+#landing .text{
+    display: flex;
+    flex-direction: column;
+    gap: calc(4px + .1vw + .1vh);
+    color: #fff;
+}
+
+#landing img{
+    width: 80%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

@@ -1,0 +1,28 @@
+#lessons{
+    width: var(--screen);
+    display: flex;
+    flex-direction: column;
+    padding: calc(64px + 1vw + 1vh) 0;
+}
+#lessons span{
+    text-transform: uppercase;
+    font-weight: 500;
+    background: var(--gradient-one);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#lessons h2{
+    font-size: calc(18px + 1vh + 1vw);
+    line-height: 110%;
+    text-transform: capitalize;
+}
+#lessons .grid{
+    display: grid;
+    padding: calc(24px + 1vw + 1vh) 0;
+    grid-template-columns: repeat(3,1fr);
+    gap: calc(32px + .5vh + .5vw);
+}
+
+#lessons .grid img{
+    width: 100%;
+}

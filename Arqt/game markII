@@ -1,0 +1,29 @@
+# $8 endereço de impressão 
+# $9 é salva a cor impressa
+# $10 posição da impressão na tela
+# $11 posicao dinamica
+# $14 usado para verificação
+
+# $12 teclas
+# $13 indice das telcas
+# $15 verifica qual tecla foi pressionada
+# $24 verifica se alguma tecla foi pressionada
+# $25 endereço do teclado
+
+# keys(0) tecla a
+# keys(4) tecla w
+# keys(8) tecla d
+
+.data
+	plasmaPosition: .word 512 # posição do tiro
+	
+	keys: 
+		.align 2
+		.space 16 # gardar caractere a
+		
+.text
+main:
+
+end: 
+addi $2, $0, 10
+syscall

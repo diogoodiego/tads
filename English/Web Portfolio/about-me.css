@@ -1,0 +1,23 @@
+#about-me{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: var(--bg-secondary);
+}
+#about-me main{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: calc(32px + 1vw + 1vh) 0;
+    gap: calc(48px + 1vw + 1vh);
+}
+#about-me img{
+    width: 100%;
+}
+#about-me .text{
+    display: flex;
+    flex-direction: column;
+    gap: calc(12px + .5vw + .5vh);   
+}

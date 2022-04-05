@@ -1,0 +1,41 @@
+#projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#projects .grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: calc(32px + 1vh + 1vw) 0;
+    gap: 1rem;
+}
+#projects .grid h1{
+    grid-column: span 3;
+}
+#projects .grid span{
+    grid-column: span 3;
+}
+#projects .grid .card{
+    background-color: #f5f7f7;
+    padding: 2rem 1rem; 
+    object-fit: scale-down;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+#projects .grid .card:hover{
+    box-shadow: 4px 12px 24px rgba(32, 62, 231, 0.116);
+}
+#projects .grid img{
+    width: 100%;
+}
+
+#projects .grid .card:nth-child(4){
+    grid-row: span 2;
+}
+#projects .grid .card:nth-child(6){
+    grid-row: span 2;
+}
