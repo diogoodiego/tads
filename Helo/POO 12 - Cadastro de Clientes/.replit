@@ -1,2 +1,0 @@
-language = "csharp"
-run = "mcs -out:main.exe 'pokedex/main.cs' 'pokedex/pokemon.cs' 'pokedex/npokemon.cs' 'pokedex/type.cs' 'pokedex/ntype.cs' 'pokedex/user.cs' 'pokedex/nuser.cs' ; mono main.exe"
